@@ -5,15 +5,18 @@ public class Character : MonoBehaviour
 {
     
     [SerializeField]
-    float speed = 10, jumpForce = 10;
+    float speed = 10, jumpForce = 10 , turnSpeed = 10;
     Vector3 movement = Vector3.zero;
     Vector2 moveRaw;
     float jumpRaw;
     CharacterController controller;
     float gravity = 9.81f;
 
-    CacheService<bool> groundedCache = new CacheService<bool>(0.5f, t => t);
-    CacheService<float> jumpRawCache = new CacheService<float>(0.5f, t => t > 0);
+
+    float turn;
+
+    CacheService<bool> groundedCache = new CacheService<bool>(0.3f, (t,_) => t);
+  
 
     public void OnAttack(InputValue value)
     {
@@ -37,7 +40,7 @@ public class Character : MonoBehaviour
 
     public void OnLook(InputValue value)
     {
-         
+        turn = value.Get<Vector2>().x;
     }
 
     public void OnMove(InputValue value)
@@ -72,18 +75,18 @@ public class Character : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         
 
 
-        if (groundedCache.Check(controller.isGrounded))
+        if (groundedCache.Check(controller.isGrounded) && movement.y <=0)
         {
             
-            if (jumpRawCache.Check(jumpRaw) != 0)
+            if (jumpRaw != 0)
             {
-                movement.y += jumpRawCache.Check(jumpRaw) + jumpForce;
+                movement.y += jumpRaw * jumpForce; 
             }
             else
             {
@@ -93,7 +96,7 @@ public class Character : MonoBehaviour
         }
         else
         {
-            movement.y = -gravity;
+            movement.y += -gravity  *Time.deltaTime;
         }
 
 
@@ -101,7 +104,9 @@ public class Character : MonoBehaviour
         movement.x = moveRaw.x * speed;
         movement.z = moveRaw.y * speed;
 
-        controller.Move(movement * Time.deltaTime );
+        controller.Move(transform.rotation * movement * Time.deltaTime);
+        transform.eulerAngles += new Vector3(0, turn * Time.deltaTime * turnSpeed, 0);
+        
     }
 
     /// <summary>

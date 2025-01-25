@@ -7,9 +7,9 @@ public class CacheService<T>
     float time;
     float lastTime;
     
-    Func<T, bool> cacheCondition;
+    Func<T,T, bool> cacheCondition;
 
-    public CacheService(float time, Func<T, bool> cacheCondition)
+    public CacheService(float time, Func<T,T, bool> cacheCondition)
     {
         this.time = time;
         this.cacheCondition = cacheCondition;
@@ -22,7 +22,7 @@ public class CacheService<T>
             return Cache;
         }
 
-        if (cacheCondition(value))
+        if (cacheCondition(value,Cache))
         {
             Cache = value;
             lastTime = Time.time;
