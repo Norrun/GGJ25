@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1be4815bea5b7644cc67936a87b58c6bd52390e0a9801b0af3971ee1953dbbbd
-size 381
+fileFormatVersion: 2
+guid: 3f8eda438d8aeab4d9223c5b53f5ef62
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Foliage/Bush/Bush.prefab
+  uploadId: 705314

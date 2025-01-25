@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47019cf4cb974aeed6dcd5aad2428ab1c72c2e0b64796f6c70e44e8f9372521c
-size 408
+fileFormatVersion: 2
+guid: be6a741af13d50f41b8befdd255bf584
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Materials/Flower Leaf.mat
+  uploadId: 705314

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:539b4cd032f524c22e12d9bbde3b54596d8e011a32157c1835083017c7603075
-size 384
+fileFormatVersion: 2
+guid: cdafd6d66f108e740a95731699638c87
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Water/Detailed Water.prefab
+  uploadId: 705314

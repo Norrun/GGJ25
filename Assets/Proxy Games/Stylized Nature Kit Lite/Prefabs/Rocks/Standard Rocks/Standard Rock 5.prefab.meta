@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb7c36778d8ca88bde8fbf0dda006d161926d9fc0b4d708b5f40eea3918cbac7
-size 404
+fileFormatVersion: 2
+guid: 76f72119263e837459dd528ba521ea53
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Rocks/Standard Rocks/Standard
+    Rock 5.prefab
+  uploadId: 705314

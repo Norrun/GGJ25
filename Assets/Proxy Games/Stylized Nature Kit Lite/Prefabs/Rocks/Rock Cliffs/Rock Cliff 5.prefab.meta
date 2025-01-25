@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:085828907619a239e2830461d6b8a2e9ce2b6d5ee938fd9f14164de529e22710
-size 398
+fileFormatVersion: 2
+guid: 4462df8489303ba448bfd5971b82232f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Rocks/Rock Cliffs/Rock
+    Cliff 5.prefab
+  uploadId: 705314

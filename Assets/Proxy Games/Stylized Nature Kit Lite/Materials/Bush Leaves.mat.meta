@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95a0b4571a1f25574cb0a4abb82846e244e9cb5732d71c5195bffddd0acf5b72
-size 408
+fileFormatVersion: 2
+guid: 143c45bbb5ae694479b1566df4a4f9a2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Materials/Bush Leaves.mat
+  uploadId: 705314

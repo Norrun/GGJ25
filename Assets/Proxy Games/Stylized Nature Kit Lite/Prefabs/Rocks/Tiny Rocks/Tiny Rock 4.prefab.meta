@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa80e25535c57b3ba5791382c2e3262650847af4e2af48ba254d3c89d0a7be74
-size 396
+fileFormatVersion: 2
+guid: e810868f614ca754bbec1ee2a733ad45
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Rocks/Tiny Rocks/Tiny
+    Rock 4.prefab
+  uploadId: 705314

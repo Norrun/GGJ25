@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7fd5fe6283605c2be8ce19c0705ca9484782e9a19a9424b40fb182f11b9e9f75
-size 396
+fileFormatVersion: 2
+guid: 9f69fd57086ff5046914a8b32350a1cb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Materials/Grass.mat
+  uploadId: 705314

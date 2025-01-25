@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e97b29da38e8d1088716816b091bd7ef840ef17064c3e44a41c1123d61e267c8
-size 390
+fileFormatVersion: 2
+guid: 1f9036ec905b920479091aca9ba81305
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Foliage/Trees/Spruce
+    1.prefab
+  uploadId: 705314

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c77c16f3b31b517cb6362ba587b219b74c847bda2b1e9cc02f4f7a16c4b82f6
-size 410
+fileFormatVersion: 2
+guid: b725cacc7387b1f4e991c4bdfcd832c8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Materials/Color Palette.mat
+  uploadId: 705314

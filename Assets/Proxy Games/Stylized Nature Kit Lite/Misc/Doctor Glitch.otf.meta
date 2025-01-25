@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:684f6aae8f1cd7bf5085a8238eacaa8c85f6b557bdc4e74b5ccfb8e3cca1c78b
-size 695
+fileFormatVersion: 2
+guid: b4b8947316b54ed4cad6c212041ef7f6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Doctor Glitch
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Misc/Doctor Glitch.otf
+  uploadId: 705314

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0ddc9d1ea325d3274e5cf8ba13cc63ea3b935988c3d50f9faeceb6fee05d35a
-size 415
+fileFormatVersion: 2
+guid: 9c0a1cda53d749f40a30a84ed1657377
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Materials/Spruce Tree Branch.mat
+  uploadId: 705314

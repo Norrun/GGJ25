@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f345fb2e2259421d12642d206421b1a8b7a9b1d3824cad9609fe371470c93d8
-size 383
+fileFormatVersion: 2
+guid: 4db940c31d61ac149801c850fc645d68
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Prefabs/Foliage/Grass/Grass.prefab
+  uploadId: 705314

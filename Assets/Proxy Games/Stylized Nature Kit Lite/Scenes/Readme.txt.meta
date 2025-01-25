@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37521ad246c2ab049f418092aef004f1f8830f2e403a867bd875b1f2b7c1225b
-size 370
+fileFormatVersion: 2
+guid: 0e61b35456967e74caef0be18fcce5cf
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176906
+  packageName: Stylized Nature Kit Lite
+  packageVersion: 1.2
+  assetPath: Assets/Proxy Games/Stylized Nature Kit Lite/Scenes/Readme.txt
+  uploadId: 705314
