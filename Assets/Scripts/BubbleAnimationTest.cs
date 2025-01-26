@@ -17,7 +17,7 @@ public class BubbleAnimationTest : MonoBehaviour
         {
 
             isOn = !isOn;
-            _anim.SetBool("Sucking", isOn);
+            _anim.SetBool("Blowing", isOn);
 
 
         }
