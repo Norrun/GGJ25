@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-    [SerializeField]
-    Rigidbody Waffle;
+    ParticleSystem particles;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-         
+        particles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -20,8 +20,7 @@ public class Cauldron : MonoBehaviour
     {
         if (other) //TODO: is player
         {
-            Waffle = Instantiate(Waffle,transform.position, Quaternion.identity);
-            Waffle.AddForce(Vector3.up * 10);
+            particles.Play();
         }
     }
 }
