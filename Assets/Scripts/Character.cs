@@ -26,8 +26,8 @@ public class Character : MonoBehaviour
     CachingService<bool> groundedCache = new CachingService<bool>(0.2f, (t, _) => t);
 
     bool sucking, blowing = false;
-    
 
+     public int ingredientAmount = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -164,6 +164,7 @@ public class Character : MonoBehaviour
         if (proxy.rigidbodies.Remove( collision.rigidbody))
         {
             Destroy(collision.gameObject);
+            ingredientAmount++;
         }
     }
 

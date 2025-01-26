@@ -18,8 +18,9 @@ public class Cauldron : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other) //TODO: is player
+        if (other.CompareTag("Player")) //TODO: is player
         {
+            particles.maxParticles = other.GetComponent<Character>().ingredientAmount;
             particles.Play();
         }
     }
