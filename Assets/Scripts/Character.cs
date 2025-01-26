@@ -164,7 +164,7 @@ public class Character : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (proxy.rigidbodies.Remove( collision.rigidbody))
+        if (proxy.rigidbodies.Remove( collision.rigidbody) && sucking)
         {
             Destroy(collision.gameObject);
             ingredientAmount++;
