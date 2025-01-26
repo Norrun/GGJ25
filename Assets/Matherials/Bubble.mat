@@ -126,10 +126,10 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _MetallicStrength: 0.007
+    - _MetallicStrength: 0
     - _NormalStrength: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.779
+    - _Opacity: 0.439
     - _Parallax: 0.06
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -138,7 +138,7 @@ Material:
     - _RimPower: 1.14
     - _RimSize: 4.18
     - _Smoothness: 0.845
-    - _SmoothnessStrength: 0.715
+    - _SmoothnessStrength: 0.599
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
@@ -158,9 +158,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 0.90588236}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RefractionColour: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColour: {r: 3.7591274, g: 25.707582, b: 23.59207, a: 1}
+    - _RimColour: {r: 0.66404414, g: 4.5412054, b: 4.167503, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 0.5896226, g: 1, b: 0.99528307, a: 1}
+    - _Tint: {r: 0.495372, g: 0.8679245, b: 0.86437637, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3794854195617298302
