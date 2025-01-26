@@ -20,8 +20,11 @@ public class Cauldron : MonoBehaviour
     {
         if (other.CompareTag("Player")) //TODO: is player
         {
+            Camera.main.transform.SetParent(null);
+            Destroy(other.gameObject);
             particles.maxParticles = other.GetComponent<Character>().ingredientAmount;
             particles.Play();
+            
         }
     }
 }

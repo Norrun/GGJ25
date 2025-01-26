@@ -5013,10 +5013,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c856d750a71268b409dc9855a1a76bc2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3011043772499982070}
+      addedObject: {fileID: 9089859217677556987}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c856d750a71268b409dc9855a1a76bc2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9089859217677556987}
+      addedObject: {fileID: 8475575249450310348}
     - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: c856d750a71268b409dc9855a1a76bc2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2079314338593294404}
@@ -5026,27 +5026,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c856d750a71268b409dc9855a1a76bc2, type: 3}
   m_PrefabInstance: {fileID: 1125343832575420699}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &3011043772499982070
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243035574449509450}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 2, z: 0}
 --- !u!65 &9089859217677556987
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5066,8 +5045,20 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8475575249450310348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243035574449509450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e566c63cb128e45ac58d7c1df7c740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &582300523242770160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c856d750a71268b409dc9855a1a76bc2, type: 3}

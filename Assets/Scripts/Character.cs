@@ -23,6 +23,8 @@ public class Character : MonoBehaviour
     
     float gravity = 9.81f;
 
+    float z = 0;
+
     CachingService<bool> groundedCache = new CachingService<bool>(0.2f, (t, _) => t);
 
     bool sucking, blowing = false;
@@ -33,7 +35,7 @@ public class Character : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        
+        z = transform.position.z;
     }
 
     // Update is called once per frame
@@ -73,6 +75,7 @@ public class Character : MonoBehaviour
         }
 
         movement.x = moveRaw * speed;
+        movement.z = z - transform.position.z;
         controller.Move(movement * Time.deltaTime);
 
 
