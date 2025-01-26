@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,12 +6,14 @@ public class Character : MonoBehaviour
 {
 
     [SerializeField]
-    float speed = 10, jumpForce = 10;
+    float speed = 10, jumpForce = 10, suckForce = 10;
     Vector3 movement = Vector3.zero;
 
     [SerializeField]
     Transform mesh;
 
+    [SerializeField]
+    ProxyCollider proxy;
     [SerializeField]
     Animator _anim;
 
@@ -22,12 +25,15 @@ public class Character : MonoBehaviour
 
     CachingService<bool> groundedCache = new CachingService<bool>(0.2f, (t, _) => t);
 
-    bool sucking = false;
+    bool sucking, blowing = false;
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        
     }
 
     // Update is called once per frame
@@ -68,11 +74,33 @@ public class Character : MonoBehaviour
 
         movement.x = moveRaw * speed;
         controller.Move(movement * Time.deltaTime);
+
+
+        if (sucking)
+        {
+            foreach (var item in proxy.rigidbodies)
+            {
+                item.Key.AddForce((transform.position - item.Key.position).normalized * suckForce * Time.deltaTime);
+            }
+        }
+
+        if (blowing)
+        {
+            foreach (var item in proxy.rigidbodies)
+            {
+                item.Key.AddForceAtPosition((  item.Key.position - transform.position).normalized * suckForce * Time.deltaTime,item.Value);
+            }
+        }
+
+        
+
+
     }
 
     public void OnAttack(InputValue value)
     {
-
+        blowing = value.Get<float>() > 0;
+        _anim.SetBool("Blowing", blowing);
     }
 
     public void OnCrouch(InputValue value)
@@ -82,8 +110,8 @@ public class Character : MonoBehaviour
 
     public void OnInteract(InputValue value)
     {
-        
-            sucking = !sucking;
+
+        sucking = value.Get<float>() > 0;
             _anim.SetBool("Sucking", sucking);
         
         
@@ -127,6 +155,16 @@ public class Character : MonoBehaviour
     public void OnSprint(InputValue value)
     {
 
+    }
+
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (proxy.rigidbodies.Remove( collision.rigidbody))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
 }
